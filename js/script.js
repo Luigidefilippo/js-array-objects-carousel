@@ -69,16 +69,16 @@ const prevImg = document.querySelector (".prev")
 nextImg.addEventListener("click", function(){
     nextImage();
     clearInterval(autoplayInteval);
-    autoplayInteval = setInterval(nextImage, 3000);
+    autoplayInteval = setInterval(nextImage, 5000);
 });
-autoplayInteval = setInterval(nextImage, 3000);
+autoplayInteval = setInterval(nextImage, 5000);
 
 // GESTIAMO IL BOTTONE PREVIOUS
 
 prevImg.addEventListener("click", function() {
     prevImage();
     clearInterval(autoplayInteval);
-    autoplayInteval = setInterval(nextImage, 3000)
+    autoplayInteval = setInterval(nextImage, 5000)
 });
 
 // FUNZIONE PER L'IMMAGINE SUCCESSIVA
@@ -110,7 +110,7 @@ itemsContainer.addEventListener("mouseover", function(){
 });
 
 itemsContainer.addEventListener("mouseout", function(){
-    aulayInteval = setInterval(nextImage, 3000);
+    aulayInteval = setInterval(nextImage, 5000);
 });
 
 // CLICK SULLE THUMBS
